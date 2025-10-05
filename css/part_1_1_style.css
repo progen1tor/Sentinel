@@ -1,0 +1,133 @@
+body {
+    display: flex;
+    font-family: 'Oswald', sans-serif;
+    background-color: rgb(199, 216, 255);
+    align-items: center;
+    min-height: 800px;
+    flex-direction: column;
+    padding: 25px 0;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+h2 {
+    font-size: 40px;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+.black-nav {
+    background-color: black;
+    padding: 17px 0;
+    width: 100vw;
+    margin-bottom: 15px;
+}
+
+.black-nav:last-child {
+    margin-bottom: 25px;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav li:not(:last-child) {
+    margin-right: 50px;  
+}
+
+.nav li a {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    transition: all 0.5s ease;
+}
+
+.nav li a:hover {
+    color: rgb(164, 164, 164);
+    
+}
+
+h3 {
+    font-size: 30px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+h4 {
+    font-size: 25px;
+    margin-bottom: 7px;
+    font-weight: 500;
+}
+
+.info {
+    width: 700px;
+    font-size: 20px;
+}
+
+.main-info {
+    margin-bottom: 20px;
+}
+
+.services {
+    margin-bottom: 20px;
+}
+
+.services li {
+    line-height: 20px;
+} 
+
+.why-us {
+    margin-bottom: 20px;
+}
+
+.why-us li {
+    line-height: 20px;
+} 
+
+.about-us {
+    margin-bottom: 20px;
+}
+
+.notes {
+    margin-bottom: 35px;
+}
+
+.photo {
+    margin-bottom: 25px;
+    height: 550px;
+    border: 5px ridge black;
+}
+
+.go-up {
+    width: 30px;
+}
+
+.main-link {
+    position: relative;
+    color: rgb(164, 164, 164) !important;
+}
+
+.main-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 1.5px;
+    background: rgb(164, 164, 164);
+}
+
+.more-mg {
+    margin-right: 65px !important;
+}
+
+.anchor::before {
+    position: absolute;
+    content: '↓';
+    left: -18px;
+    top: 2.5px;
+}

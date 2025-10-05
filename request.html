@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/part_1_7_style.css">
+    <title>PART_1_7</title>
+</head>
+<body>
+
+    <div class="all-nav">
+        <h2 id="outer-nav">SENTINEL</h2>
+        <div class="black-nav">
+            <ul class="nav">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="lists.html">Узнать больше</a></li>
+                <li><a href="representatives.html">Представители Sentinel</a></li>
+                <li><a href="building-and-map.html"><img src="img/company-office.png" alt="company-office" width="20" title="Посмотреть офис компании"></a></li>
+                <li><a href="table.html">Краткий обзор Sentinel</a></li>
+                <li><a href="passport.html">Паспорт компании</a></li>
+                <li><a href="algs.html">Алгоритм безопасности</a></li>
+            </ul>
+        </div>
+
+        <div class="black-nav">
+            <ul class="nav">
+                <li class="more-mg"><a href="#notes" class="anchor-inactive">Перейти к рекомендациям</a></li>
+                <li><a href="#about-us" class="anchor-inactive">О Sentinel</a></li>
+                <li><a href="https://t.me/ob1101" target="_blank">Сотрудничество</a></li> 
+                <li><a href="resume.html">Подать резюме</a></li>
+                <li><a href="request.html" class="main-link">Комплексная защита</a></li>
+                <li><a href="https://docs.google.com/document/d/1ztQ5R3w9ewzbD-YblNddGogWkwsDoaPU1uzVj_aNad0/edit?usp=sharing" target="_blank" title="Посмотреть условия лицензии"><img src="img/лого.png" alt="logo" width="20"></a></li> 
+            </ul>
+        </div>
+    </div>
+
+    <h2>Комплексная защита объектов</h2>
+    <h3>Оставьте заявку — и команда Sentinel свяжется с вами, 
+        <br>чтобы подобрать оптимальное решение для вашей безопасности.</h3>
+
+    <form action="https://yandex.com/search?" target="_blank" id="security-request" name="security-request">
+        <div class="all-form-wo-btn">
+            <div class="main-obj-info">
+
+                <h4>Главная информация и базовые сведения</h4>
+
+                <label for="object-name-address">Название объекта и адрес</label>
+                <input type="text" name="object-name-address" id="object-name-address" value="Россия, Московская область, город Одинцово, Можайское шоссе, дом 13">
+
+                <label for="contact-person">Имя контактного лица</label>
+                <input type="text" name="contact-person" id="contact-person" value="Владимир Шрецкий">
+
+                <label for="additional-obj-info">Комментарии по объекту</label>
+                <textarea name="additional-obj-info" id="additional-obj-info">Нет</textarea>
+            </div>
+
+            <div class="technical">
+
+                <h4>Характеристики объекта и перечень требуемых услуг</h4>
+
+                <label for="area">Площадь объекта (м<sup>2</sup>)</label>
+                <input type="number" name="area" id="area" value="1101">
+
+                <label class="more-margin">Тип объекта <hr class="separator">
+                    <input type="radio" name="obj-type" value="office" class="less-margin">Офисное здание&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="obj-type" value="storage" class="less-margin">Склад&nbsp;&nbsp;&nbsp;
+                    <br>
+                    <input type="radio" name="obj-type" value="shop">Магазин&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="obj-type" value="residential-complex">ЖК&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="obj-type" value="other" checked>Другое&nbsp;&nbsp;&nbsp;
+                </label>
+
+                <label for="cnt-security">Количество необходимых точек охраны</label>
+                <input type="number" name="cnt-security" id="cnt-security" value="13">
+
+                <label for="cnt-cameras">Количество необходимых камер</label>
+                <input type="number" name="cnt-cameras" id="cnt-cameras" value="13">
+
+                <label class="more-margin">Уровень охранного приоритета
+                    <hr class="separator">
+                    <input type="radio" name="sec-priority" value="low">Низкий&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="sec-priority" value="medium">Средний&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="sec-priority" value="high">Высокий&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="sec-priority" value="very-high" checked>Сверхвысокий&nbsp;&nbsp;&nbsp;
+                </label>
+
+                <label class="service-type more-margin">Тип услуги <hr class="separator">
+                    <input type="radio" name="service-type" value="only-alarm-system" class="less-margin">Только сигнализация <br>
+                    <input type="radio" name="service-type" value="alarm-plus-security" class="less-margin">Сигнализация + охрана  <br>
+                    <input type="radio" name="service-type" value="complex" checked>Многоуровневая защита
+                </label>
+
+                <label class="more-margin">Дополнительные услуги <hr class="separator">
+                    <input type="checkbox" name="extra-services" id="patrol-guards" value="patrol-guards" checked>
+                    <label for="patrol-guards">Патрульная охрана</label> <br>
+                    <input type="checkbox" name="extra-services" id="alarm-button" value="alarm-button" checked>
+                    <label for="alarm-button">Тревожная кнопка</label> <br>
+                    <input type="checkbox" name="extra-services" id="fire-alarm-system" value="fire-alarm-system" checked>
+                    <label for="fire-alarm-system">Пожарная сигнализация</label>
+                </label>
+            </div>
+
+            <div class="final">
+
+                <h4>Контактная информация и подтверждение заявки</h4>
+
+                <label for="start-date">Желаемая дата начала обслуживания</label>
+                <input type="date" id="start-date" name="start-date" min="2025-09-15" value="2025-11-19">
+
+                <label for="email">Электронная почта для связи</label>
+                <input type="email" name="email" id="email" value="example@yandex.com">
+
+                <label for="phone">Номер телефона для быстрой коммуникации</label>
+                <input type="tel" name="phone" id="phone" value="+7-920-986-13-13">
+
+                <label for="captcha">Подтвердите, что вы не робот</label>
+                <img src="img/captcha.png" alt="captcha">
+                <input type="password" name="captcha" id="captcha" value="toEachHisOwn">
+
+                <input type="hidden" name="form-id" value="security-request-001">
+            </div>
+        </div>
+        <div class="btn">
+            <input type="submit" value="Отправить заявку">
+        </div>
+        
+    </form>
+</body>
+</html>
+
+
+<!-- пароль для подтверждения заявки -->
+
+<!-- последний див: желаемая дата начала обслуживания, емаил и телефон для связи, пароль для подтверждения заявки, плюс что-то с хидден -->

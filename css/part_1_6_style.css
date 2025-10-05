@@ -1,0 +1,183 @@
+body {
+    display: flex;
+    font-family: 'Oswald', sans-serif;
+    background-color: rgb(199, 216, 255);
+    min-height: 800px;
+    flex-direction: column;
+    padding: 25px 0;
+    text-align: center;
+    font-size: 20px;
+    overflow-x: hidden;
+}
+
+h2 {
+    font-size: 40px;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+.black-nav {
+    background-color: black;
+    padding: 17px 0;
+    width: 100vw;
+    margin-bottom: 15px;
+}
+
+.black-nav:last-child {
+    margin-bottom: 50px;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav li {
+    margin-right: 50px;  
+}
+
+.nav li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    transition: all 0.5s ease;
+}
+
+.nav li a:hover {
+    color: rgb(164, 164, 164);
+    
+}
+
+.main-link {
+    position: relative;
+    color: rgb(164, 164, 164) !important;
+}
+
+.main-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 1.5px;
+    background: rgb(164, 164, 164);
+}
+
+h3 {
+    font-size: 40px;
+    margin-bottom: 35px;
+    text-align: center;
+    font-weight: 600;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h4 {
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+input, select, textarea {
+    margin-bottom: 24px;
+    color: rgb(161, 161, 161);
+    font-weight: 300;
+    border-radius: 3px;
+    border: 1px solid rgb(118, 118, 118);
+}
+
+input[type="radio"], input[type="checkbox"] {
+    margin-right: 7px;
+} 
+
+.less-margin {
+    margin-bottom: 10px;
+}
+
+input:last-child {
+    margin-bottom: 0;
+}
+
+select:last-child {
+    margin-bottom: 0;
+}
+
+input[type="submit"] {
+    font-size: 25px;
+    width: 270px;
+    height: 60px;
+    transition: all 0.5s ease;
+    padding: 0;
+}
+
+input[type="submit"]:hover {
+    transform: scale(1.05);
+    border: 1px ridge black;
+    color: black;
+    box-shadow: 2px 2px 5px;
+}
+
+label {
+    margin-bottom: 7px;
+}
+
+option {
+    color: black;
+}
+
+textarea {
+    resize: none;
+}
+
+input, textarea {
+    padding: 5px;
+}
+
+.separator {
+    visibility: hidden;
+    margin: 4px 0 2px 0;
+}
+
+.personal-info {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    margin-right: 40px;
+}
+
+.working-exp {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    margin-right: 40px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+}
+
+.all-form-wo-btn {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.less-margin {
+    margin-bottom: 10px;
+}
+
+.anchor-inactive {
+    cursor: not-allowed;
+}
+
+.anchor-inactive:hover {
+    color: white !important;
+}

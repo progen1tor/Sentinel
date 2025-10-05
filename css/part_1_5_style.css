@@ -1,0 +1,182 @@
+body {
+    display: flex;
+    font-family: 'Oswald', sans-serif;
+    background-color: rgb(199, 216, 255);
+    min-height: 800px;
+    flex-direction: column;
+    padding: 25px 0;
+    text-align: center;
+    font-size: 20px;
+    overflow-x: hidden;
+}
+
+h2 {
+    font-size: 40px;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+.black-nav {
+    background-color: black;
+    padding: 17px 0;
+    width: 100vw;
+    margin-bottom: 15px;
+}
+
+.black-nav:last-child {
+    margin-bottom: 80px;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav li {
+    margin-right: 50px;  
+}
+
+.nav li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    transition: all 0.5s ease;
+}
+
+.nav li a:hover {
+    color: rgb(164, 164, 164);
+    
+}
+
+.main-link {
+    position: relative;
+    color: rgb(164, 164, 164) !important;
+}
+
+.main-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 1.5px;
+    background: rgb(164, 164, 164);
+}
+
+h3 {
+    font-size: 40px;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.company-tbl {
+    align-self: center;
+    border-collapse: collapse;
+    width: 700px;
+    background: url('../img/фон-таблицы.jpg');
+}
+
+.company-tbl__td {
+    border: 1px solid black;
+}
+
+.td_main {
+    display: flex;
+    align-items: center;
+    height: 140px;
+    padding-left: 130px;
+}
+
+.td_main img {
+    margin-right: 100px;
+}
+
+.td_main p {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.td_office {
+    height: 200px;
+    width: 100px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.td_office p {
+    font-size: 20px;
+}
+
+.arrow {
+    font-size: 40px;
+}
+
+.td_building {
+    height: 200px;
+    width: 300px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.td_building img {
+    height: 160px;
+    width: 230px;
+}
+
+.td_more-info {
+    vertical-align: middle;
+    text-align: center;
+}
+
+.td_more-info div {
+    display: inline-block;
+    width: 200px;
+}
+
+.td_more-info div p {
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+}
+
+.td_feedback {
+    vertical-align: middle;
+    text-align: center;
+    
+}
+
+.feedback {
+    width: 400px;
+    display: inline-block;
+    margin-right: 110px;
+}
+
+.feedback p {
+    font-size: 20px;
+}
+
+.lnk {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    transition: all 0.6s ease;
+}
+
+.lnk:hover {
+    text-shadow: 2px 2px 5px black;
+}
+
+.copyright {
+    display: inline-block;
+}
+
+.anchor-inactive {
+    cursor: not-allowed;
+}
+
+.anchor-inactive:hover {
+    color: white !important;
+}

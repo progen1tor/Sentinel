@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/part_1_6_style.css">
+    <title>PART_1_6</title>
+</head>
+<body class="main">
+
+    <div class="all-nav">
+        <h2 id="outer-nav">SENTINEL</h2>
+        <div class="black-nav">
+            <ul class="nav">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="lists.html">Узнать больше</a></li>
+                <li><a href="representatives.html">Представители Sentinel</a></li>
+                <li><a href="building-and-map.html"><img src="img/company-office.png" alt="company-office" width="20" title="Посмотреть офис компании"></a></li>
+                <li><a href="table.html">Краткий обзор Sentinel</a></li>
+                <li><a href="passport.html">Паспорт компании</a></li>
+                <li><a href="algs.html">Алгоритм безопасности</a></li>
+            </ul>
+        </div>
+
+        <div class="black-nav">
+            <ul class="nav">
+                <li class="more-mg"><a href="#notes" class="anchor-inactive">Перейти к рекомендациям</a></li>
+                <li><a href="#about-us" class="anchor-inactive">О Sentinel</a></li>
+                <li><a href="https://t.me/ob1101" target="_blank">Сотрудничество</a></li> 
+                <li><a href="resume.html" class="main-link">Подать резюме</a></li>
+                <li><a href="request.html">Комплексная защита</a></li>
+                <li><a href="https://docs.google.com/document/d/1ztQ5R3w9ewzbD-YblNddGogWkwsDoaPU1uzVj_aNad0/edit?usp=sharing" target="_blank" title="Посмотреть условия лицензии"><img src="img/лого.png" alt="logo" width="20"></a></li> 
+            </ul>
+        </div>
+    </div>
+
+    <h3>Форма подачи резюме</h3>
+    <form action="https://yandex.com/search?" target="_blank" id="data" name="data">
+        <div class="all-form-wo-btn">
+            <div class="personal-info">
+                <h4>Личная информация</h4>
+                <label for="name">Имя</label>
+                <input type="text" id="name" name="name" value="Илья" required>
+
+                <label for="surname">Фамилия</label>
+                <input type="text" id="surname" name="surname" value="Серебряков" required>
+
+                <label for="age">Возраст</label>
+                <input type="number" id="age" name="age" value="33" min="18" max="100" required>
+
+                <label for="country">Страна проживания</label>
+                <select name="country" id="country">
+                    <option value="russia" selected>Россия</option>
+                    <option value="kazakhstan">Казахстан</option>
+                    <option value="belarus">Беларусь</option>
+                    <option value="other">Другая страна</option>
+                </select>
+
+                <label for="city">Город проживания</label>
+                <input type="text" id="city" name="city" value="Москва">
+            </div>
+
+            <div class="working-exp">
+                <h4>Опыт работы и скиллы</h4>
+
+                <label for="experience">Стаж работы (в годах)</label>
+                <input type="number" name="experience" id="experience" value="0" min="0" max="80">
+
+                <label for="prev-company">Предыдущая компания</label>
+                <textarea name="prev-company" id="prev-company">Отсутствует</textarea>
+
+                <label for="education-level">Уровень образования</label>
+                <select name="education-level" id="education-level">
+                    <option value="secondary">Среднее</option>
+                    <option value="secondary-special">Среднее специальное</option>
+                    <option value="bachelor" selected>Бакалавр</option>
+                    <option value="master">Магистр</option>
+                    <option value="specialist">Специалист</option>
+                    <option value="phd">Аспирант</option>
+                    <option value="cert-courses">Только сертифицированные курсы</option>
+                </select>
+
+                <label>Уровень английского
+                    <hr class="separator">
+                    <input type="radio" name="english-level" value="a1" class="less-margin">A1&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="english-level" value="a2" class="less-margin">A2&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="english-level" value="b1" class="less-margin">B1&nbsp;&nbsp;&nbsp;
+                    <br>
+                    <input type="radio" name="english-level" value="b2" checked>B2&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="english-level" value="c1">C1&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="english-level" value="c2">C2&nbsp;&nbsp;&nbsp;
+                </label>
+
+                <label for="extra">Дополнительные скиллы</label>
+                <textarea name="extra" id="extra">Отстутствуют</textarea>
+            </div>
+
+            <div class="contact-info">
+                <h4>Обратная связь</h4>
+
+                <label for="email">Электронная почта</label>
+                <input type="email" name="email" id="email" value="example@yandex.ru" required>
+
+                <label for="phone-number">Номер телефона</label>
+                <input type="tel" name="phone-number" id="phone-number" value="+7-920-986-13-13" required>
+
+                <label for="messenger">Удобный способ связи</label>
+                <select name="messenger" id="messenger">
+                    <option value="tg">Telegram</option>
+                    <option value="max" selected>MAX</option>
+                    <option value="vk">ВКонтакте</option>
+                    <option value="number">Телефон</option>
+                    <option value="email-msg">Эл. почта</option>
+                </select>
+
+                <label for="comf-time">Удобное время связи</label>
+                <input type="time" name="comf-time" id="comf-time" value="13:30">
+
+                <label>
+                    <input type="checkbox" name="agreement" required checked>Согласен с условиями
+                </label>
+            </div>
+        </div>
+
+            <div class="btn">
+                <input type="submit" id="send-btn" value="Отправить резюме">
+            </div>
+
+    </form>
+</body>
+</html>
